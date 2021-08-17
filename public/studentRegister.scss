@@ -1,0 +1,45 @@
+body
+{
+    font-family: 'montserrat';
+    background-color: #EEEEEE;
+}
+.main
+{
+    margin:30px;
+}
+.container
+{
+    background-color: white;
+    padding:10px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 10px lightgray);
+}
+
+.studentName
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    .form-group{
+        input{
+            border: 1px solid gray;
+            border-radius:5px;
+        }
+    }
+}
+.section-title
+{
+    color:lightslategray;
+}
+.gender
+{
+    display:flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.geodata
+{
+    display:flex;
+    flex-direction: row;
+    column-gap:40px;
+}

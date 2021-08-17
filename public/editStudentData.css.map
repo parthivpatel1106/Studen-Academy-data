@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CACJ;EACI,WAAW,EAAC,YAAY;EACxB,gBAAgB,EAAE,OAAO;CAC5B;;AACD,AAEI,KAFC,CAED,UAAU,CACV;EACI,gBAAgB,EAAC,KAAK;EACtB,OAAO,EAAE,IAAI;EACb,aAAa,EAAC,IAAI;EAClB,MAAM,EAAC,6BAA6B;CAKvC;;AAZL,AAQQ,KARH,CAED,UAAU,CAMN,EAAE,CACF;EACI,KAAK,EAAC,IAAI;CACb",
+    "sources": [
+        "editStudentData.scss"
+    ],
+    "names": [],
+    "file": "editStudentData.css"
+}

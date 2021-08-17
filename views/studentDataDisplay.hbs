@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/studentDataDisplay.scss" type="text/css">
+    <link rel="stylesheet" href="/studentDataDisplay.css">
+    <title>Student Data</title>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h3 class="text-center">
+                Student Academy
+            </h3>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <h4>Student Data</h4>
+            <hr>
+            <div class="display">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td>{{name}}</td>
+                    </tr>
+                    <tr>
+                        <td>Enrollment ID:</td>
+                        <td>{{enroll}}</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>{{email}}</td>
+                    </tr>
+                    <tr>
+                        <td>Contact No:</td>
+                        <td>{{contact}}</td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>{{gender}}</td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td>{{city}}</td>
+                    </tr>
+                    <tr>
+                        <td>Pincode:</td>
+                        <td>{{pincode}}</td>
+                    </tr>
+                    <tr>
+                        <td>Branch Name:</td>
+                        <td>{{branch}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="buttons">
+            <a href="/auth/editData" class="btn btn-primary">Edit Data</a>
+            <a href="/auth/deleteData" class="btn btn-danger">Delete</a>
+            </div>
+            {{#if message}}
+            <h4 class="text-danger">{{message}}</h4>
+            <br>
+             <a href="/registration" class="btn btn-primary">New Registration</a>
+            {{/if}}
+        </div>
+    </div>
+    {{!-- <script src="/studentDataDisplay.js"></script> --}}
+    {{!-- jquery cdn for bootstrap starts --}}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    {{!-- jquery cdn for bootstrap ends --}}
+</body>
+</html>

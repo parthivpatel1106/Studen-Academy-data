@@ -1,0 +1,17 @@
+body {
+  font-family: 'montserrat';
+  background-color: #eeeeee;
+}
+
+.main .container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(1px 1px 5px gray);
+          filter: drop-shadow(1px 1px 5px gray);
+}
+
+.main .container h4 {
+  color: gray;
+}
+/*# sourceMappingURL=editStudentData.css.map */

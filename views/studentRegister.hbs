@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/studentRegister.scss" type="text/css">
+    <link rel="stylesheet" href="/studentRegister.css">
+    <title>Student Register</title>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+        <div class="container">
+            <div class="text-center mt-3"><h1>Create Student Record</h1></div>
+            <div class="section-title"><h4>Student data</h4></div>
+            <hr>
+            <form action="/auth/registerData" method="POST">
+                <div class="studentName">
+                <div class="form-group">
+                    <label for="studentFname">First name:</label>
+                    <input type="text" class="fname" placeholder="First Name" name="firstname">
+                </div>
+                <div class="form-group">
+                    <label for="studentLname">Middle Name:</label>
+                    <input type="text" class="mname" placeholder="Middle Name" name="middlename">
+                </div>
+                <div class="form-group">
+                    <label for="studentLname">Surname:</label>
+                    <input type="text" class="lname" placeholder="Last Name" name="lastname">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="Enrollment">Enrollment ID:</label>
+                    <input type="text" class="form-control" maxlength="12" placeholder="Enrollement ID" name="enrollmentid">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" placeholder="Email" name="emailid">
+                </div>
+                <div class="form-group">
+                    <label for="tele">Contact no:</label>
+                    <input type="tel" class="form-control" maxlength="10" placeholder="Contact no" name="contactno">
+                </div>
+                <div class="gender">
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="gender" id="maleRadio" value="male" class="form-check-input" checked>
+                    <label for="male1">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="gender" id="femaleRadio" value="female" class="form-check-input">
+                    <label for="female1">Female</label>
+                </div>
+                </div>
+                <div class="geodata">
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" class="cityName" placeholder="City" name="cityname">
+                    </div>
+                    <div class="form-group">
+                        <label for="pincode">Pincode:</label>
+                        <input type="text" class="pinCode" maxlength="6" placeholder="Pincode" name="pincode">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="branch">Branch name:</label>
+                    <select name="branches" id="branchSelect" class="form-control" name="branchselect">
+                        <option value="" selected disabled hidden>-- Choose Here --</option>
+                        <option value="Computer Engineering">Computer Engineering</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                        <option value="Chemical Engineering">Chemical Engineering</option>
+                        <option value="Electrical Engineering">Electrical Engineering</option>
+                        <option value="Electronics and Communication">Electronics and Communication Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Register" class="btn btn-primary btn-lg">
+                </div>
+            </form>
+            <div class="message"><h4 class="text-danger">{{message}}</h4></div>
+        </div>
+    </div>
+
+    {{!-- jquery cdn for bootstrap starts --}}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    {{!-- jquery cdn for bootstrap ends --}}
+</body>
+</html>

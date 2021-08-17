@@ -1,0 +1,19 @@
+body
+{
+    font-family:'montserrat';
+    background-color: #eeeeee;
+}
+.main
+{
+    .container
+    {
+        background-color:white;
+        padding: 30px;
+        border-radius:20px;
+        filter:drop-shadow(1px 1px 5px gray);
+        h4
+        {
+            color:gray;
+        }
+    }
+}
